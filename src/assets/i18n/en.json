@@ -1,0 +1,83 @@
+{
+  "header": {
+    "navbar-button": {
+      "dashboard": "Dashboard",
+      "saveNav": "Save Navigation",
+      "caseMgr": "Case Manager"
+    },
+    "usersettingdropdown": {
+      "status": "Status",
+      "online": "Online",
+      "user-setting": "User Settings",
+      "reset-password": "Change Password",
+      "offline": "Offline",
+      "switch-company": "Switch Company",
+      "view-bookmarks": "View Bookmarks",
+      "logout": "Logout"
+    },
+    "notifications": "Notificat ions",
+    "alerts": "Alerts"
+  },
+  "login": {
+    "login": "Login",
+    "username": "User Name",
+    "password": "Password",
+    "rememberme": "Remember me",
+    "forgotpassword": "Forgot Password",
+    "termuse": "Terms Of Use",
+    "poweredby": "Powered by Edufront",
+    "privacypolicy": "Privacy Policy"
+  },
+  "change-password": {
+    "password": "New Password",
+    "confirm-password": "Confirm New Password"
+  },
+  "forgot": {
+    "emailaddress": "Email Address"
+  },
+  "setting": {
+    "user-profile-setting": {
+      "first-name": "Email address",
+      "last-name": "Password",
+      "username": "Remember me",
+      "email": "Remember me",
+      "country": "Remember me",
+      "state": "Privacy Policy",
+      "Zip": "Privacy Policy"
+    },
+    "user-application-setting": {
+      "application-setting": "Application  Settings",
+      "credit-card": "Credit card",
+      "debit-card": "Debit card",
+      "paypal": "Paypal",
+      "update-setting": "Update Settings"
+    }
+  },
+  "str-case": {
+    "case-mgr": {
+      "dropdown-menu": {
+        "case-manager": "Case Manager",
+        "priority": "Priority",
+        "due-date": "Due Date",
+        "last-active": "Last Active"
+      }
+    },
+    "nav-link": {
+      "network": "Network",
+      "pharmacy": "Pharmacy",
+      "provider-care": "Provider & Care",
+      "claims-accuracy": "Claims Accuracy"
+    }
+  },
+  "str-plans": {
+
+  },
+  "str-save": {
+    "nav-link": {
+      "network": "Network",
+      "pharmacy": "Pharmacy",
+      "provider-care": "Provider & Care",
+      "claims-accuracy": "Claims Accuracy"
+    }
+  }
+}

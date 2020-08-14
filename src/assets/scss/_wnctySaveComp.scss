@@ -1,0 +1,98 @@
+/****  SAVINGS NAVIGATOR  ****/
+/* Wenicity Category Select Comp */
+
+.compCont {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+}
+.displayTable {
+  display: table;
+}
+.hideTable {
+  display: none;
+}
+.chartCont {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.compSepL {
+  width: 100%;
+  /*border-left: wColor(wGreyMd) 2px solid;*/
+  display: inline-flex;
+  float: left;
+}
+
+.compSepR {
+  width: 100%;
+  border-right: wColor(wGreyMd) 2px solid;
+  display: inline-flex;
+  float: left;
+}
+.compSepC {
+  width: 100%;
+  border-right: wColor(wGreyMd) 2px solid;
+  display: inline-flex;
+  float: left;
+}
+
+.stepCont {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+
+  li {
+    width: 38px;
+    height: 38px;
+    color: wColor(wDisabled);
+    border-color: wColor(wDisabled);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 34px;
+    font-size: 18px;
+  }
+
+  .step {
+    width: 38px;
+    height: 38px;
+    color: wColor(wDisabled);
+    border-color: wColor(wDisabled);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 34px;
+    font-size: 18px;
+    display: inline-block;
+  }
+
+  .stepSpace {
+    width: 75px;
+    height: 3px;
+    display: inline-block;
+    margin: 5px;
+    background-color: wColor(wDisabled);
+  }
+
+  .spaceNxt {
+    background-color: wColor(wGreyMd);
+  }
+
+  .stepActive {
+    border-color: wColor(wGreyMd);
+    background-color: wColor(wPrimary);
+    color: #fff;
+  }
+
+  .stepNext {
+    border-color: wColor(wGreyMd);
+    background-color: none;
+    color: wColor(wGreyMd);
+  }
+}

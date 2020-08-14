@@ -1,0 +1,383 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* TODO: Finish commenting the Main App Style SCSS */
+
+/* Call Edufront Variables */
+@import "assets/scss/_wnctyVariables.scss";
+@import "assets/scss/_wnctyPrimeFlex.scss";
+@import "assets/scss/_wnctyButtons.scss";
+@import "assets/scss/_wnctyMasterComp.scss";
+@import "assets/scss/_wnctyComp.scss";
+@import "assets/scss/_wnctyLogin.scss";
+@import "assets/scss/_wnctyPlansComp.scss";
+@import "assets/scss/_wnctySaveComp.scss";
+@import "assets/scss/_wnctyCaseComp.scss";
+@import "assets/scss/_wnctyUserSetting.scss";
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-navigations/styles/material.css';
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+body {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+h1 {
+  color: wColor(wPrimary);
+}
+
+h2 {
+  color: wColor(wPrimary);
+}
+
+h3 {
+  color: wColor(wPrimary);
+}
+
+h4 {
+  color: wColor(wPrimary);
+}
+
+h5 {
+  color: wColor(wPrimary);
+}
+
+h6 {
+  color: wColor(wPrimary);
+}
+
+.wFooter {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+/* Edufront Color Tags */
+
+.wPurpleTxt {
+  color: wColor(wPrimary);
+}
+
+.wGreyTxt {
+  color: #808080;
+}
+
+.wGreenTxt {
+  color: wColor(wGreen);
+}
+
+.wRedTxt {
+  color: wColor(wRed);
+}
+
+.wSaphire50Txt {
+  color: wColor(wSaphire50);
+}
+
+.bg-wPurple {
+  background-color: wColor(wPrimary);
+}
+
+.bg-wSaphire50 {
+  background-color: wColor(wSaphire50);
+}
+
+.bg-wSaphire15 {
+  background-color: #E5DBEB;
+}
+
+.bg-wBronze50 {
+  background-color: wColor(wBronze50);
+}
+
+.bg-wBronze15 {
+  background-color: wColor(wBronze15);
+}
+
+.bg-wSeafoam50 {
+  background-color: wColor(wSeafoam50);
+}
+
+.bg-wSeafoam15{
+  background-color: wColor(wSeafoam15);
+}
+
+.bg-wEmrald50 {
+  background-color: wColor(wEmrald50);
+}
+
+.bg-wEmrald15 {
+  background-color: wColor(wEmrald15);
+}
+
+.bg-wGold50 {
+  background-color: wColor(wGold50);
+}
+
+.bg-wGold15 {
+  background-color: wColor(wGold15);
+}
+
+.bg-wRed {
+  background-color: wColor(wRed);
+}
+
+.bg-wYellow {
+  background-color: wColor(wYellow);
+}
+
+.bg-wGreen {
+  background-color: wColor(wGreen);
+}
+
+/* Edufront Modal */
+
+#wnctyModal {
+  h5 {
+    color: wColor(wPrimary);
+    font-weight: 600;
+  }
+}
+
+/* CSS Controls */
+
+.hidden {
+  display: none !important;
+}
+
+.disabled {
+  color: wColor(wDisabled);
+}
+
+.selected {
+  color: wColor(wSelect);
+}
+
+.collapse {
+}
+
+.btn-well {
+  background-color: wColor(wButton);
+  color: #fff;
+}
+
+/* Application Header */
+
+.appContainer {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+
+  .appRow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .appHeader {
+    box-shadow: 0px 3px 3px #C1CBCD;
+    background-color: #fff;
+    height: 75px;
+  }
+}
+
+.flexTest {
+    flex: 1 1 auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.btn-wNav {
+}
+
+
+.appContainer .box {
+  display: flex;
+  flex-direction: column;
+}
+
+.appCtrlCont {
+  display: inline-block;
+  right: 20px;
+  position: absolute;
+  min-width: 340px;
+  vertical-align: middle;
+
+  .dropdown-toggle::after {
+    display: none;
+    visibility: hidden;
+  }
+
+  .dropdown-menu {
+    box-shadow: 1px 1px 3px 3px #f1f1f1;
+  }
+
+  .dropdown-menu:after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #f1f1f1;
+    border-right: 10px solid transparent;
+    position: absolute;
+    left: 50%;
+    /*margin-left: 58px;*/
+    bottom: 100%;
+  }
+
+  .btn-link {
+    color: wColor(wButton);
+  }
+
+  .btn-link:hover {
+    color: #999999;
+  }
+}
+
+#Notifications {
+  /*left: -105px;*/
+  left: -132px;
+  width: 301px;
+  margin-top: -6px;
+}
+
+
+
+  #Alerts {
+    left: -78px;
+  }
+
+.numComm {
+  background-color: wColor(wSelect);
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+ /* width: 16px;
+  height: 16px;*/
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+  min-width: 16px;
+  width: auto;
+  height: auto;
+
+  }
+
+  .userGrp {
+    float: right;
+    display: inline-block;
+    min-width: 150px;
+    border-left: #EBEBF2 2px solid;
+
+    .dropdown-menu {
+      left: 0;
+      margin: 10px 0 0;
+    }
+  }
+
+  .commGrp {
+    float: right;
+    display: inline-block;
+    min-width: 150px;
+    height: 39px;
+  }
+
+  .appCtrl {
+    float: right;
+    display: inline;
+    margin: 7px;
+    color: wColor(wButton);
+  }
+
+  .appCtrl:hover {
+    color: #999999;
+  }
+
+  .userPic {
+    float: right;
+    display: inline-block;
+    border: 1px solid #6B68AD;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    background-color: #A4AFB7;
+    background-image: url(assets/img/img_avatar3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .ctrlCarrot {
+    height: 11px;
+    float: right;
+    display: inline-block;
+    margin: 10px;
+    color: #A4AFB7;
+  }
+
+  .userName {
+    float: right;
+    display: inline-block;
+    font-size: 1em;
+    margin: 6px 5px 6px 20px;
+    color: #3F3E66;
+  }
+
+  body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  /* Form Adjustments */
+  #wnctyModal {
+    .user-setting-legend {
+      width: 40%;
+    }
+
+    legend {
+      padding: 0 0 0 20px;
+      margin-bottom: .5rem;
+    }
+
+    .form-control {
+      padding: .175rem .5rem;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    label {
+      margin-bottom: .25rem;
+    }
+  }
+
+//html, body { height: 100%; }
+html, body {
+  height: 100%;
+}
+
+/*body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  //justify-items: center;
+  align-items: center;
+  background-color: #3a3a3a;
+}*/
+
+
+/*mat-dialog-container#case-create {
+  border: 3px solid #262626;
+  border-radius: 11px;
+  background-color: #1a1a1a;
+}*/
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

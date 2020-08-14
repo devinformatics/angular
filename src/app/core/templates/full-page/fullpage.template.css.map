@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "fullpage.template.css",
+	"sources": [
+		"fullpage.template.scss"
+	],
+	"mappings": "",
+	"names": []
+}

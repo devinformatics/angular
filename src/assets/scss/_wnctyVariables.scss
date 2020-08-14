@@ -1,0 +1,30 @@
+
+/* TODO: Finish commenting the Variables SCSS */
+
+$wColors: (
+/* Primary Palette */
+wPrimary: #6B68AD, wSelect: #E6A124, wGreen: #497A3E, wRed: #CC3333, wBlue: #308CD0, wYellow: #EFD46D, wButton: #3F3E66, wDisabled: #c3c3c3, wHover: #999999,
+/* Greys */
+wGreyDrk: #808080, wGreyMd: #BFBFBF, wGreyLt: #E6E6E6,
+/*Chart Palette*/
+wSaphire100: #55137A, wSaphire70: lighten (#55137A, 70%), wSaphire50: lighten (#55137A, 50%), wSaphire30: lighten (#55137A, 30%), wSaphire15: lighten (#55137A, 15%), wSeafoam100: #3ABF8F, wSeafoam70: lighten (#3ABF8F, 70%), wSeafoam50: lighten (#3ABF8F, 50%), wSeafoam30: lighten (#3ABF8F, 30%), wSeafoam15: lighten (#3ABF8F, 15%), wAqua100: #31B9B6, wAqua70: lighten (#31B9B6, 70%), wAqua50: lighten (#31B9B6, 50%), wAqua30: lighten (#31B9B6, 30%), wAqua15: lighten (#31B9B6, 15%), wEmrald100: #006F69, wEmrald70: lighten (#006F69, 70%), wEmrald50: lighten (#006F69, 50%), wEmrald30: lighten (#006F69, 30%), wEmrald15: lighten (#006F69, 15%), wBronze100: #AF6C30, wBronze70: lighten (#AF6C30, 70%), wBronze50: lighten (#31B9B6, 50%), wBronze30: lighten (#31B9B6, 30%), wBronze15: lighten (#31B9B6, 15%), wGold100: #BCB10D, wGold70: lighten (#AF6C30, 70%), wGold50: lighten (#AF6C30, 50%), wGold30: lighten (#AF6C30, 30%), wGold15: lighten (#AF6C30, 15%), wCopper100: #D47252, wCopper70: lighten (#D47252, 70%), wCopper50: lighten (#D47252, 50%), wCopper30: lighten (#D47252, 30%), wCopper15: lighten (#D47252, 15%) );
+
+/* Wellneciity Color Management Function */
+
+@function wColor($color-name) {
+  @return map-get($wColors, $color-name)
+}
+
+
+body .ui-tree .ui-tree-container .ui-treenode .ui-treenode-content.ui-treenode-selectable .ui-treenode-label:not(.ui-state-highlight):hover {
+  background-color: #007ad9 !important;
+  color: #fff;
+}
+body .ui-tree .ui-tree-container .ui-treenode .ui-treenode-content .ui-treenode-label.ui-state-highlight {
+  background-color: orange !important;
+  color: #ffffff;
+}
+
+body .ui-tree .ui-tree-container .ui-treenode .ui-treenode-content.ui-treenode-selectable .ui-treenode-label:not(.ui-state-highlight):hover {
+  color: #fff !important;
+}

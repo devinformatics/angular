@@ -1,0 +1,374 @@
+/****  Edufront Plans Component Styles  ****/
+
+/****  Benefits Plan  ****/
+
+/* TODO: Finish commenting the Plans Component SCSS */
+
+#Comp1 {
+  /*height: 600px;*/
+}
+
+.bTable {
+  width: 100%;
+  font-family: Roboto;
+  margin-bottom: 20px;
+
+  .bTh {
+    text-align: center;
+    color: wColor(wGreyDrk);
+    text-decoration: underline;
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
+  .bRhLabel {
+    font-size: 14px;
+    line-height: 15px;
+    color: wColor(wGreyDrk);
+    font-weight: 400;
+  }
+
+  .bNumLg {
+    color: wColor(wPrimary);
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 1.1em;
+    padding-left: 5px;
+
+    &.disabled {
+      color: wColor(wDisabled);
+    }
+  }
+}
+
+.secTitle {
+  margin: 8px 0 15px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #808080;
+  margin-left: 20px;
+}
+
+.circleCont {
+  height: 113px;
+  width: 113px;
+  align-content: center;
+}
+
+.circleBG {
+  top: -5px;
+  height: 113px;
+  width: 113px;
+  border: 8px solid #F4F4F4;
+  border-radius: 50%;
+  position: absolute;
+  align-content: center;
+}
+
+.circleTitle {
+  margin-top: 15px;
+  color: #3F3E66;
+  font-size: .9em;
+  line-height: 14px;
+}
+
+.circleAmt {
+  margin-top: 3px;
+  color: #6B69AD;
+  font-weight: 900;
+  font-size: 1.8em;
+  line-height: 1.2em;
+}
+
+.variantGrp {
+  margin-top: -6px;
+  align-content: center;
+}
+
+.variantIcon {
+  display: inline-block;
+  font-size: .75em;
+}
+
+.variantAmt {
+  font-size: 11px;
+  font-weight: bold;
+  display: inline-block;
+  /* margin-left: 3px;*/
+  padding: 2px;
+}
+
+/****  Savings Plan  ****/
+
+/* Wenicity Progress Bar */
+
+.activeGrp {
+}
+
+
+.wnctyProgGroup {
+
+  .legendCircle {
+    height: 18px;
+    width: 18px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  .actProgCont {
+    border: 2px solid #666;
+    border-radius: 30px;
+    width: 395px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .progCont {
+    border: 1px solid #BFBFBF;
+    border-radius: 18px;
+    width: 360px;
+    height: 36px;
+    margin-bottom: 15px;
+    background: none;
+  }
+
+  .progCont:hover {
+    border: 1px solid wColor(wSaphire);
+  }
+
+  .progText {
+    color: wColor(wButton);
+    font-weight: 600;
+    float: left;
+    margin-left: 20px;
+    display: inline-block;
+    position: absolute;
+    text-shadow: 0px 0px 8px #fff;
+  }
+
+  .progAmount {
+    color: wColor(wButton);
+    font-weight: 600;
+    margin-right: 15px;
+    display: inline-block;
+    font-size: 1.6em;
+    color: #6B69AD;
+    text-shadow: 2px 2px 5px #fff;
+  }
+
+  .progress {
+    background-color: #fff;
+  }
+
+  .progress-bar {
+    background-color: #fff;
+    text-align: right;
+  }
+
+  .bg-wPurple {
+    background-color: #6B68AD;
+  }
+
+  .bg-wSaphire50 {
+    background-color: #A988BC;
+  }
+
+  .bg-wSaphire15 {
+    background-color: #E5DBEB;
+  }
+
+  .bg-wRed {
+    background-color: rgba(204, 51, 51, 0.7);
+  }
+
+  .bg-wBronze50 {
+    background-color: rgba(175, 108, 48, 0.5);
+  }
+
+  .bg-wBronze15 {
+    background-color: rgba(175, 108, 48, 0.15);
+  }
+
+  .bg-wSeafoam50 {
+    background-color: rgba(58, 191, 143, 0.5);
+  }
+
+  .bg-wSeafoam15 {
+    background-color: rgba(58, 191, 143, 0.15);
+  }
+
+  .bg-wEmrald50 {
+    background-color: rgba(0, 111, 105, 0.5);
+  }
+
+  .bg-wEmrald15 {
+    background-color: rgba(0, 111, 105, 0.15);
+  }
+
+  .bg-wGold50 {
+    background-color: rgba(188, 177, 13, 0.5);
+  }
+
+  .bg-wGold15 {
+    background-color: rgba(188, 177, 13, 0.15);
+  }
+
+  .bg-wCopper50 {
+    background-color: rgba(212, 114, 82, 0.5);
+  }
+
+  .bg-wCopper15 {
+    background-color: rgba(212, 114, 82, 0.15);
+  }
+}
+
+/* Wenicity Savings Comp */
+
+.totalSaveGrp {
+  width: 200px;
+  //text-align: right;
+}
+
+.totalSaveGrp h6 {
+  margin: 0;
+  font-weight: 500;
+  color: #808080;
+}
+
+.totalSaveGrp h2 {
+  margin: 0;
+  font-weight: 700;
+}
+.txtbg-wBronze {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(175, 108, 48, 0.5);
+}
+.txtbg-wSeafoam {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(58, 191, 143, 0.5);
+}
+.txtbg-wEmrald {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(0, 111, 105, 0.5);
+}
+.txtbg-wGold {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(188, 177, 13, 0.5);
+}
+.txtbg-wSaphire {
+  font-weight: 600;
+  font-size: 18px;
+  color: #A988BC;
+}
+.txtbg-wCopper {
+  font-weight: 600;
+  font-size: 18px;
+  color: #D47252;
+}
+.saveTable {
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  padding: 3px;
+  border-collapse: collapse;
+  border: none;
+  margin-top: 0;
+
+  .tAmount {
+    font-weight: 600;
+    font-size: 18px;
+    color: wColor(wPrimary);
+  }
+
+  .tAmount1 {
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(204, 51, 51, 0.7);
+  }
+
+  .tOperator {
+    font-weight: 600;
+    font-size: 28px;
+    color: wColor(wButton);
+    align-content: center;
+  }
+
+  .tDisc {
+    font-weight: 500;
+    font-size: 14px;
+    color: wColor(wGreyDrk);
+    vertical-align: top;
+    line-height: 15px;
+  }
+}
+
+.childrendetaildata {  
+  font-size: 12px;
+  margin-top: 75px;
+  /*float: right;
+  position: absolute;
+  right: 0;
+  z-index: 999;
+  padding-right: 16px;*/
+}
+.childrendata {
+  /*float: left;*/
+  text-align: left;
+  display: inline-block;
+  /*background-color: #f9f9f9;*/
+}
+
+.childrendata th{
+  border-bottom: 1px solid #000;
+  /*min-width: 150px;*/
+  padding: 3px;
+}
+
+.childrendata td {
+  /*min-width: 150px;*/
+  padding: 3px;
+}
+td.childrendatatd {
+  text-align: right !important;
+}
+.tblHeader{
+  font-size: 13px;
+  font-weight: 500;
+  color: grey;
+}
+.totalAmount {
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+.tblBody {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.chartOuterCont1 {
+  /*float: left;
+  width: 50%;*/
+  height: 400px;
+
+  &.noTable {
+    /*width: 100%;*/
+  }
+  svg {
+      overflow: visible !important;
+  }
+}
+.chartOuterCont {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  //height: 525px;
+
+  &.noTable {
+    width: 100%;
+  }
+ }
+

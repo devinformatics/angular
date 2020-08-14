@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="compHeader">
+        <div class="compTitle">Historical Year</div>
+        <div class="compSupTextCont"></div>
+        <div class="compCtrlGrp">
+          <div class="compCtrlClosed" id="widgetCont2">
+            <div class="widgetGrp">
+              <div class="widgetBtn history active"></div>
+              <div class="widgetBtn actual"></div>
+              <div class="widgetBtn forecast"></div>
+            </div>
+            <div class="widgetGrp">
+              <div class="widgetBtn month"></div>
+              <div class="widgetBtn quarter"></div>
+              <div class="widgetBtn year active"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row compBody">
+    <div class="col-12 text-center" style="margin-bottom:20px;">
+      <!--<fusioncharts width={{width}}
+              height={{height}}
+              type={{type}}
+              dataFormat={{dataFormat}}
+              [dataSource]=dataSource>
+      </fusioncharts>-->
+    </div>
+  </div>
+  <div class="row compBody">
+    <div class="col-12 text-center" style="margin-bottom:20px;">
+      <fusioncharts type="column2d"
+              width="700"
+              height="400"
+              dataFormat="json"
+              [dataSource]="dataSource"
+              (initialized)="initialized($event)">
+      </fusioncharts>
+    </div>
+  </div>
+</div>

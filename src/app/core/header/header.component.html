@@ -1,0 +1,129 @@
+<div class="appRow appHeader">
+  <header class="navbar navbar-expand flex-column flex-md-row bd-navbar">
+    <!-- LOGO WILL BE SET FROM CLIENT CONFIGURATION -->
+    <a class="navbar-brand" [routerLink]='["/dashboard"]' (click)="collapse('Plan')" >
+      <!--<img src="../../assets/img/EdufrontLogo.png" width="235" height="50" alt="" />-->
+      <div class="clientLogo {{imgURL}}"></div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-nav-scroll" id="navbarCollapse">
+      <ul class="navbar-nav bd-navbar-nav">
+        <!-- TEMP USE OF ROUTER FOR PRIMARY NAVIGATION -->
+        <li [routerLinkActive]='["link-active"]' [routerLinkActiveOptions]='{exact:true }'>
+          <a [routerLink]='["/dashboard"]' (click)="collapse('Plan')"><button id="btnPlan" class="btn btnW-rnd-lg bg-plan" style="box-shadow: none;"></button></a>
+        </li>
+
+        <!--Start : Need to uncomment in future Link for Campaign Builder-->
+        <!--<li class="nav-item">
+          <a [routerLink]='["/dashboard/campaignbuilder"]' (click)="collapse('Campaign')"><button id="btnCampaign" class="btn btnW-rnd-lg bg-camp" style="box-shadow: none;"></button></a>
+        </li>-->
+        <li class="nav-item">
+          <a [routerLink]='["/dashboard/campaigns"]' (click)="collapse('Campaign')"><button id="btnCampaign" class="btn btnW-rnd-lg bg-camp" style="box-shadow: none;"></button></a>
+        </li>
+        <!--End : Link for Campaign Builder-->
+        <li class="nav-item">
+          <a [routerLink]='["/dashboard/saveNav"]' (click)="collapse('Save')"><button id="btnSave" class="btn btnW-rnd-lg bg-save" style="box-shadow: none;"></button></a>
+        </li>
+
+        <li class="nav-item">
+          <a [routerLink]='["/dashboard/caseMgr"]' (click)="collapse('Case')"><button id="btnCase" class="btn btnW-rnd-lg bg-case" style="box-shadow: none;"></button></a>
+        </li>
+      </ul>
+    </div>
+    <div class="appCtrlCont">
+      <div class="userGrp btn-group">
+        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+         
+          <span  class="userAvatarBox headerUserAvatar"><ngx-avatar class="my-avatar" name="{{firstName}} {{lastName}}"></ngx-avatar></span>
+          <div class="ctrlCarrot halflings halflings-chevron-down"></div>
+          <div class="userName" id="UserFull">{{UserFullName}}</div>
+          <!--{{user.lastName  }}-->
+        </button>
+        <div class="dropdown-menu text-center">
+
+          <div class="dropdown-header"><b>Status :</b> Online</div>
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-header">{{clientName}}</div>
+          <!-- Launches User Settings Modal -->
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#wnctyModal" (click)="getMenu('settings')">User Profile</a>
+          <!-- Launches Change Password Modal -->
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#wnctyModal" (click)="getMenu('reset-password')">Change Password</a>
+          <!-- Launches Change Company Modal -->
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#wnctyModal" (click)="getMenu('client')" *ngIf="clientCount > 1">Switch Client</a>
+          <!-- Launches Change Company Modal -->
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#wnctyModal" (click)="getMenu('switch-plan')">Switch Plan Year</a>
+          <!-- Launches Bookmarks Modal -->
+          <!-- <a class="dropdown-item" href="#">View Bookmarks</a> -->
+          <!-- Launches Logout Modal -->
+          <a class="dropdown-item" href="#" (click)="logout()">Logout</a>
+        </div>
+      </div>
+      <div class="btn-group">
+       <!-- <button type="button" class="btn btn-link appCtrl"><span class="glyphicons glyphicons-alert" aria-hidden="true"></span></button> -->
+       <!--<a  href="#" data-toggle="modal" data-target="#wnctyModal" (click)="getMenu('notification')"><button type="button" class="btn btn-link appCtrl"><span class="glyphicons glyphicons-alert" ></span></button></a>-->
+        <!--Start : Email Notification-->
+       <div class="btn-group">
+         <button type="button" class="btn btn-link appCtrl" data-toggle="dropdown" [disabled]="isDisabled"><span class="glyphicons glyphicons-envelope" aria-hidden="true" (click)="getNotification()"></span></button>
+         <!--<button type="button" class="btn btn-link appCtrl" data-toggle="modal" data-target="#wnctyModal"><span class="glyphicons glyphicons-envelope" aria-hidden="true" (click)="getMenu('notification')"></span></button>-->
+         <div class="numComm" id="NumNote" *ngIf="shownotification">{{totalNotificationCount}}</div>
+         <div class="dropdown-menu" id="Notifications">
+           <div class="dropdown-header">
+             Notifications
+           </div>
+           <div class="dropdown-divider"></div>
+           <!--New added-->
+           <p-scrollPanel [style]="{width: '100%', height: '200px'}" styleClass="custom">
+             <div *ngFor="let n of notificationsdata">
+
+               <a class="dropdown-item" data-toggle="modal" data-target="#wnctyModal" (click)="ShowAllNotification('notification',n.UUID,n.description,n.title,n.createdByUUID)">
+                 <div class="media" style="cursor:pointer;">
+                   <img src="../../assets/img/img_avatar3.png" alt="John Doe" class="mr-1 mt-1 rounded-circle" style="width:30px;">
+                   <div class="media-body">
+                     <h6>{{loadUsername(n.createdByUUID)}} <small><i> {{n.title}} </i></small></h6>
+                     <p><small><i>{{n.createdByDate|date :'short'}}</i></small></p>
+                   </div>
+                 </div>
+               </a>
+               <div class="dropdown-divider"></div>
+
+             </div>
+           </p-scrollPanel>
+             <!--<ng-template #no_data_templ>
+      <div class="norecord">No data found.</div>
+    </ng-template>-->
+             <!--<a class="dropdown-item aviewall" data-toggle="dropdown" href="#" (click)="getNotification('All');false;">View all notifications</a>-->
+         </div>
+         </div>
+        <!--End : Email Notification-->
+        <div class="btn-group">
+          <button type="button" class="btn btn-link appCtrl" data-toggle="dropdown" [disabled]="isDisabledA"><span class="glyphicons glyphicons-bell" aria-hidden="true" (click)="getAlert()"></span></button>
+          <div class="numComm" id="NumAlrt" *ngIf="show">{{currentAlertcount}}</div>
+
+          <div class="dropdown-menu disabled" id="Alerts">
+            <div class="dropdown-header">
+              Alerts
+            </div>
+            <div class="dropdown-divider"></div>
+            <p-scrollPanel [style]="{width: '100%', height: '230px'}" styleClass="custom">
+              <div *ngFor="let n of alertsdata" class="Wmaindiv">
+                <a class="dropdown-item" data-toggle="modal" data-target="#wnctyModal" (click)="ShowAlert('alert',n.UUID)">
+                  <div class="media" style="cursor:pointer;height:33px;margin-top:3px;">                  
+                    <div class="media-body">
+                      <h6 > <small><i>{{n.title}} </i></small></h6>
+                      <p class="pstyle"><small><i>  {{n.createdByDate|date :'short'}}</i></small></p>
+                    </div>
+                  </div>
+                </a>
+                <div class="dropdown-divider" style="display:none;"></div>
+              </div>
+            </p-scrollPanel>
+                          
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+

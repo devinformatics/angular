@@ -1,0 +1,45 @@
+{
+  "chart": {
+    // Chart Data
+    "showBorder": "0",
+    "showShadow": "0",
+    "use3DLighting": "0",
+    "baseFont": "Roboto",
+    "paletteColors": "#55137A, #AF6C30, #3ABF8F, #006F69, #BCB10D",
+    "doughnutRadius": "100",
+    "pieRadius": "160",
+    "numberPrefix": "$",
+    "formatNumber": "1",
+    "bgColor": "#ffffff",
+    "startingAngle": "25",
+    "showLegend": "0",
+    "defaultCenterLabel": "Total Annual<br>2018 Projected Budget: $19,404,226",
+    "centerLabel": "Budget for $label: $value",
+    "centerLabelBold": "1",
+    "showTooltip": "0",
+    "decimals": "0",
+    "theme": "fusion"
+  },
+  "data": [
+    {
+      "label": "Medical",
+      "value": "16646453"
+    },
+    {
+      "label": "Administrative",
+      "value": "531341"
+    },
+    {
+      "label": "Health Management",
+      "value": "1007201"
+    },
+    {
+      "label": "Pharmacy",
+      "value": "1219223"
+    },
+    {
+      "label": "Stop Loss",
+      "value": "200000"
+    }
+  ]
+} // end of this.dataSource

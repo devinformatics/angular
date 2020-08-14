@@ -1,0 +1,32 @@
+<div class="loginCont">
+  <form class="form-signin" (ngSubmit)="submit()" [formGroup]="forgotForm" novalidate>
+    <div class="text-center mb-4">
+      <img src="../../../assets/img/logoedu.png"  alt="" />
+    </div>
+    <div class="alert alert-danger" *ngIf="errorMessage">
+      {{errorMessage}}
+    </div>
+
+    <div class="alert alert-success" *ngIf="successMessage">
+      {{successMessage}}
+    </div>
+
+    <div class="form-label-group">
+      <input type="email" formControlName="email" id="inputEmail" class="form-control wellLogin" autofocus=""
+             [ngClass]="{'is-invalid':(submitted && forgotForm.get('email').errors?.required || forgotForm.get('email').errors?.email) }" />
+      <div class="invalid-feedback">
+        <span *ngIf="forgotForm.get('email').errors?.required">Email Address is required.</span>
+        <span *ngIf="forgotForm.get('email').errors?.email && !forgotForm.get('email').errors?.required">Invalid email.</span>
+      </div>
+      <label for="inputEmail">{{'forgot.emailaddress' | translate}}<span class="text-danger">*</span></label>
+
+
+    </div>
+    <button class="btn btn-lg btn-well btn-block" type="submit">Submit</button>
+    <p class="mt-5 mb-3 text-muted text-center"><a routerLink="/">{{'login.login'|translate}}</a></p>
+
+  </form>
+</div>
+<div class="wFooter">
+  <p class="text-center">{{'login.poweredby' | translate}}<br><a href="#" data-toggle="modal" data-target="#wnctyModal" data-backdrop="static" data-keyboard="false" (click)="getTermUse('termuse')">{{'login.termuse' | translate}}</a>  |   <a href="#" data-toggle="modal" data-target="#wnctyModal" data-backdrop="static" data-keyboard="false" (click)="getPrivacyPolicy('privacypolicy')">{{'login.privacypolicy' | translate}}</a></p>
+</div>

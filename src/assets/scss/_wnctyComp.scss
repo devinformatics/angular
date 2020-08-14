@@ -1,0 +1,103 @@
+/****  Edufront Component Styles  ****/
+
+/****  Savings Plan  ****/
+
+.compHeader {
+  height: 53px;
+  border-bottom: 2px solid #F4F4F4;
+}
+
+.noLine {
+    border-bottom: none;
+}
+
+.compIcon {
+  display: inline-block;
+  color: wColor(wButton);
+  background-color: #FFF;
+  background-image: url(assets/img/PrimeIcons.png);
+  background-repeat: no-repeat;
+  height: 57px;
+  width: 57px;
+  margin: 0;
+  float: left;
+}
+
+.compTitle {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  color: #808080;
+  margin-top: 12px;
+}
+
+.compSupTextCont {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #6B69AD;
+  margin-left: 20px;
+}
+
+.compButtonGrp {
+  display: inline-block;
+  float: right;
+  min-width: 200px;
+}
+
+.widgetGrp {
+  display: inline-block;
+  padding-left: 3px;
+  margin-left: 14px;
+  border: 1px solid wColor(wHover);
+  border-radius: 5px;
+  line-height: .8;
+}
+
+.widgetFilterGrp {
+  display: inline-block;
+  padding-left: 14px;
+  margin-left: 14px;
+  border-left: 2px solid wColor(wDisabled);
+  color: #fff;
+  height:31px;
+}
+
+.compCtrlGrp {
+  display: inline-block;
+  float: right;
+  min-width: 200px;
+
+  .compCtrlClosed {
+    float: right;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .compCtrlClosed a {
+    color: #3F3E66;
+  }
+
+  .compCtrlClosed a:hover {
+    color: #999999;
+  }
+
+  .compCtrlOpen {
+    float: right;
+    display: inline-block;
+    margin-top: 18px;
+  }
+}
+
+.compBody {
+  margin: 15px 0;
+  height: 100%;
+}
+  .compBody .card {
+    width: 350px;
+  }
+
+.chartCont {
+  width: 100%;
+  height:300px;
+}

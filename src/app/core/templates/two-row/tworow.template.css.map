@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "tworow.template.css",
+	"sources": [
+		"tworow.template.scss"
+	],
+	"mappings": "",
+	"names": []
+}

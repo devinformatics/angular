@@ -1,0 +1,40 @@
+<div class="loginCont">
+
+  <form class="form-signin" (ngSubmit)="submit()" [formGroup]="signInForm" novalidate>
+    <div class="text-center mb-4">
+      <img src="../../../assets/img/logoedu.png"  alt="" />
+    </div>
+
+    <div class="form-label-group">
+      <input type="text" formControlName="username" id="inputEmail" class="form-control wellLogin" required="" autofocus="false" [ngClass]="{'is-invalid':(signInForm.get('username').errors?.required) && submitted}">
+      <label for="inputEmail">{{'login.username' | translate}}</label>
+      <div class="invalid-feedback">
+        <span *ngIf="signInForm.get('username').errors?.required">User Name required.</span>
+      </div>
+    </div>
+
+    <div class="form-label-group">
+      <input formControlName="password" #password type="password" id="inputPassword" class="form-control wellLogin" placeholder="Password" required="" [ngClass]="{'is-invalid':(signInForm.get('password').errors?.required) && submitted}">
+      <label for="inputPassword">{{'login.password' |translate}}</label>
+      <div class="invalid-feedback">
+        <span *ngIf="signInForm.get('password').errors?.required">Password required.</span>
+      </div>
+    </div>
+    <p *ngIf="!isPasswordValid" style="color:red;">
+      password not valid.
+    </p>
+    <!--<div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me">{{'login.rememberme' | translate}}
+      </label>
+    </div>-->
+    <button class="btn btn-lg btn-well btn-block" type="submit">Sign in</button>
+    <div class="mt-5 mb-3 text-muted text-center" *ngIf="getAuthError | async">
+      <span style="color:red;">{{errorMessage}}</span>
+    </div>
+    <p class="mt-5 mb-3 text-muted text-center"><a routerLink="/forgot">{{'login.forgotpassword'|translate}}</a></p>
+  </form>
+</div>
+<div class="wFooter">
+  <p class="text-center">{{'login.poweredby' | translate}}<br><a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#wnctyModal" (click)="getTermUse('termuse')">{{'login.termuse' | translate}}</a>  |   <a href="#" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#wnctyModal" (click)="getPrivacyPolicy('privacypolicy')">{{'login.privacypolicy' | translate}}</a></p>
+</div>

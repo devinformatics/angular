@@ -1,0 +1,479 @@
+/* Edufront BUTTONS */
+
+/* Primary Navigation Button */
+
+/* TODO: Finish commenting the Buttons SCSS */
+
+.btn-primary {
+  color: #fff;
+  background-color: #3F3E66 !important;
+  border-color: none !important;
+}
+
+
+.btnW-rnd-lg {
+  color: wColor(wButton);
+  background-color: #FFF;
+  background-image: url(assets/img/PrimeIcons.png);
+  background-repeat: no-repeat;
+  border-color: #C1CBCD !important;
+  border-radius: 50% !important;
+  height: 57px;
+  width: 57px;
+  margin: 0 10px;
+}
+
+.btnW-rnd-lg:hover {
+  color: #fff;
+  background-color: #999999;
+}
+
+.bg-plan {
+  background: url(assets/img/PrimeIcons.png)no-repeat -1px -58px;
+}
+.bg-plan-color {
+  background-color: orange !important;
+}
+.bg-save {
+  background: url(assets/img/PrimeIcons.png) no-repeat -57px -57px;
+}
+
+.bg-case {
+  background: url(assets/img/PrimeIcons.png) no-repeat -114px -58px;
+}
+
+
+
+
+
+.bg-camp {
+  background: url(assets/img/PrimeIcons.png) no-repeat -172px -58px;
+}
+
+.bg-campaign {
+  background: url(assets/img/PrimeIcons.png) no-repeat -172px -58px;
+}
+
+.bg-catSelect {
+  background: url(assets/img/PrimeIcons.png) no-repeat -230px -58px;
+}
+
+.bg-itemSelect {
+  background: url(assets/img/PrimeIcons.png) no-repeat -288px -58px;
+}
+
+.active {
+  .btnW-rnd-lg {
+  color: #fff;
+  background-color: wColor(wButton);
+  }
+
+  .bg-plan {
+    background-position: -1px -1px;
+  }
+
+  .bg-save {
+    background-position: -57px -1px;
+  }
+
+  .bg-case {
+    background-position: -114px -1px;
+  }
+
+  .bg-camp {
+    background-position: -172px -1px;
+  }
+}
+
+.bg-plan a:hover {
+  background-position: -1px -1px;
+}
+
+.bg-save a:hover {
+  background-position: -57px -1px;
+}
+
+.bg-case a:hover {
+  background-position: -114px -1px;
+}
+
+.bg-camp a:hover {
+  background-position: -172px -1px;
+}
+
+.bg-catSelect a:hover {
+  background-position: -230px -1px;
+}
+
+.bg-itemSelect a:hover {
+  background-position: -288px -1px;
+}
+
+.bg-plan-focus {
+  background: url(assets/img/PrimeIcons.png)no-repeat -1px -1px;
+}
+
+.bg-camp-focus {
+  background: url(assets/img/PrimeIcons.png) no-repeat -172px -1px;
+}
+
+
+
+.bg-save-focus {
+  background: url(assets/img/PrimeIcons.png) no-repeat -57px -1px;
+}
+
+.bg-case-focus {
+  background: url(assets/img/PrimeIcons.png) no-repeat -114px -1px;
+}
+.widgetBtn {
+  background-image: url(assets/img/WnctyIcons.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border-radius: 3px;
+  height: 30px;
+  width: 30px;
+  margin: 0 3px 0 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.history {
+  background-position: 0 0;
+
+  &:hover {
+    background-position: 0 -30px;
+  }
+
+  &.active {
+    background-position: 0px -60px;
+  }
+
+  &.disabled {
+    background-position: 0px -90px;
+    cursor: none;
+  }
+}
+
+.actual {
+  background-position: -30px 0;
+
+  &:hover {
+    background-position: -30px -30px;
+  }
+
+  &.active {
+    background-position: -30px -60px;
+  }
+
+  &.disabled {
+    background-position: -30px -90px;
+    cursor:none;
+  }
+}
+
+.forecast {
+  background-position: -60px 0;
+
+  &:hover {
+    background-position: -60px -30px;
+  }
+
+  &.active {
+    background-position: -60px -60px;
+  }
+
+  &.disabled {
+    background-position: -60px -90px;
+    cursor: none;
+  }
+}
+
+.month {
+  background-position: -90px 0;
+
+  &:hover {
+    background-position: -90px -30px;
+  }
+
+  &.active {
+    background-position: -90px -60px;
+  }
+
+  &.disabled {
+    background-position: -90px -90px;
+    cursor: none;
+  }
+}
+
+.quarter {
+  background-position: -120px 0;
+
+  &:hover {
+    background-position: -120px -30px;
+  }
+
+  &.active {
+    background-position: -120px -60px;
+  }
+
+  &.disabled {
+    background-position: -120px -90px;
+    cursor: none;
+  }
+}
+
+.year {
+  background-position: -150px 0;
+
+  &:hover {
+    background-position: -150px -30px;
+  }
+
+  &.active {
+    background-position: -150px -60px;
+  }
+
+  &.disabled {
+    background-position: -150px -90px;
+    cursor: none;
+  }
+}
+
+.employer {
+  background-position: -390px 0;
+
+  &:hover {
+    background-position: -390px -30px;
+  }
+
+  &.active {
+    background-position: -390px -60px;
+  }
+
+  &.disabled {
+    background-position: -390px -90px;
+    cursor: none;
+  }
+}
+
+.employee {
+  background-position: -420px 0;
+
+  &:hover {
+    background-position: -420px -30px;
+  }
+
+  &.active {
+    background-position: -420px -60px;
+  }
+
+  &.disabled {
+    background-position: -420px -90px;
+    cursor: none;
+  }
+}
+
+.tableView {
+  background-position: -180px 0;
+
+  &:hover {
+    background-position: -180px -30px;
+  }
+
+  &.active {
+    background-position: -180px -60px;
+  }
+
+  &.disabled {
+    background-position: -180px -90px;
+    cursor: none;
+  }
+}
+
+.barChart {
+  background-position: -210px 0;
+
+  &:hover {
+    background-position: -210px -30px;
+  }
+
+  &.active {
+    background-position: -210px -60px;
+  }
+
+  &.disabled {
+    background-position: -210px -90px;
+    cursor: none;
+  }
+}
+
+.pieChart {
+  background-position: -240px 0;
+
+  &:hover {
+    background-position: -240px -30px;
+  }
+
+  &.active {
+    background-position: -240px -60px;
+  }
+
+  &.disabled {
+    background-position: -240px -90px;
+    cursor: none;
+  }
+}
+
+.listView {
+  background-position: -270px 0;
+
+  &:hover {
+    background-position: -270px -30px;
+  }
+
+  &.active {
+    background-position: -270px -60px;
+  }
+
+  &.disabled {
+    background-position: -270px -90px;
+    cursor: none;
+  }
+}
+
+.recordView {
+  background-position: -300px 0;
+
+  &:hover {
+    background-position: -300px -30px;
+  }
+
+  &.active {
+    background-position: -300px -60px;
+  }
+
+  &.disabled {
+    background-position: -300px -90px;
+    cursor: none;
+  }
+}
+
+.cardView {
+  background-position: -330px 0;
+
+  &:hover {
+    background-position: -330px -30px;
+  }
+
+  &.active {
+    background-position: -330px -60px;
+  }
+
+  &.disabled {
+    background-position: -330px -90px;
+    cursor: none;
+  }
+}
+
+.showSort {
+  background-position: -360px 0;
+
+  &:hover {
+    background-position: -360px -30px;
+  }
+
+  &.active {
+    background-position: -360px -60px;
+  }
+
+  &.disabled {
+    background-position: -360px -90px;
+    cursor: none;
+  }
+}
+
+.configure {
+  background-position: -450px 0;
+
+  &:hover {
+    background-position: -450px -30px;
+  }
+
+  &.active {
+    background-position: -450px -60px;
+  }
+
+  &.disabled {
+    background-position: -450px -90px;
+    cursor: none;
+  }
+}
+
+.refresh {
+  background-position: -480px 0;
+
+  &:hover {
+    background-position: -480px -30px;
+  }
+
+  &.active {
+    background-position: -480px -60px;
+  }
+
+  &.disabled {
+    background-position: -480px -90px;
+    cursor: none;
+  }
+}
+
+.addCamp {
+  background-position: -510px 0;
+
+  &:hover {
+    background-position: -510px -30px;
+  }
+
+  &.active {
+    background-position: -510px -60px;
+  }
+
+  &.disabled {
+    background-position: -510px -90px;
+    cursor: none;
+  }
+}
+
+.editCamp {
+  background-position: -540px 0;
+
+  &:hover {
+    background-position: -540px -30px;
+  }
+
+  &.active {
+    background-position: -540px -60px;
+  }
+
+  &.disabled {
+    background-position: -540px -90px;
+    cursor: none;
+  }
+}
+
+.filterBtn {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 0 3px 0 0;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid wColor(wDisabled);
+  text-align: center;
+  background-color: wColor(wDisabled);
+  font-weight: 600;
+
+  &.select {
+    border-color: wColor(wSelect);
+  }
+}
