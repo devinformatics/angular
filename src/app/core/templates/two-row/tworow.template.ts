@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AppState, getUserInfo, getAuthenticatedToken } from '../../store/reducers/app.reducer';
+import { AppState,  getAuthenticatedToken } from '../../store/reducers/app.reducer';
 import { Store } from '@ngrx/store';
 import 'rxjs/add/operator/takeWhile';
 import 'rxjs/add/operator/filter';

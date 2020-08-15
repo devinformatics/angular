@@ -4,7 +4,7 @@ import { Settings } from '../../_models/settings';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { Settingstate } from '../../store/reducers/settings.reducer';
-import { AppState, getUserInfo,  getAuthenticatedToken } from '../../store/reducers/app.reducer';
+import { AppState,  getAuthenticatedToken } from '../../store/reducers/app.reducer';
 import { SetUserSetting, CheckUserEmail } from '../../store/actions/settings.actions';
 
 import { Observable } from 'rxjs';

@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 import { map, tap } from 'rxjs/operators';
 import { HttpResponse } from '@angular/common/http';
 import { UserService } from '../../_service/user.service';
-import { UserActionTypes, GetUserProfile } from '../actions/user.actions';
+
 import { of } from 'rxjs';
 
 import { AppState, getAuthenticatedToken } from '../reducers/app.reducer';

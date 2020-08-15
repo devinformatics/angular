@@ -17,7 +17,7 @@ import { map, tap } from 'rxjs/operators';
 import { HttpResponse, HttpResponseBase } from '@angular/common/http';
 import { AuthenticationService } from '../../_service/authentication.service';
 import { UserService } from '../../_service/user.service';
-import { GetUserClients } from '../actions/user.actions';
+
 import { AppState } from '../reducers/app.reducer';
 import { error } from 'protractor';
 

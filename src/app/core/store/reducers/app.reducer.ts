@@ -8,7 +8,7 @@ import { storeFreeze } from 'ngrx-store-freeze';
 import { environment } from '../../../../environments/environment';
 
 import * as Auth from './auth.reducer';
-import * as USERCRUD from './user.reducer';
+
 import * as AllSETTINGDATA from './settings.reducer';
 import * as ResetPasswrod from './resetpassword.reducer';
 import * as LOCATION from './locations.reducer';
@@ -22,7 +22,7 @@ import { state } from '@angular/animations';
 export interface AppState {
   router: fromRouter.RouterReducerState;
   authState: Auth.State;
-  userState: USERCRUD.USERSTATE;
+ 
   settingsState: AllSETTINGDATA.Settingstate;
   resetPasswordState: ResetPasswrod.CHANGEPASSWORDSTATE;
   locationState: LOCATION.Locationstate;
@@ -33,7 +33,7 @@ export interface AppState {
 export const reducers: ActionReducerMap<AppState> = {
   router: fromRouter.routerReducer,
   authState: Auth.reducer,
-  userState: USERCRUD.reducer,
+
   settingsState: AllSETTINGDATA.reducer,
   resetPasswordState: ResetPasswrod.reducer,
 
@@ -59,7 +59,7 @@ export function reducer(state: any, action: any) {
 
 
 export const getAppAuthState = (state: AppState) => state.authState;
-export const getAppUserState = (state: AppState) => state.userState;
+
 
 export const getAuthenticatedToken = createSelector(getAppAuthState, Auth.getAuthenticatedToken);
 export const getUserDetailData = createSelector(getAppAuthState, Auth.getUserDetailData);
@@ -71,15 +71,6 @@ export const getAuthenticationError = createSelector(getAppAuthState, Auth.getAu
 
 export const isAuthenticated = createSelector(getAppAuthState, Auth.isAuthenticated);
 
-export const getUserInfo = createSelector(getAppUserState, USERCRUD.getUserInfo);
-
-export const getUserProfile = createSelector(getAppUserState, USERCRUD.getUserProfile);
-
-
-
-export const getSelectedClientId = createSelector(getAppUserState, USERCRUD.getClientById);
-
-export const getUserStateError = createSelector(getAppUserState, USERCRUD.getError);
 
 export const getForgotError = createSelector(getAppAuthState, Auth.getForgotError);
 

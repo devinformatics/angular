@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, AfterViewChecked, ChangeDetectorRef } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState, getUserInfo, getAuthenticatedToken } from '../store/reducers/app.reducer';
+import { AppState,  getAuthenticatedToken } from '../store/reducers/app.reducer';
 import { LogOut } from '../store/actions/auth.actions';
 
 import { distinctUntilChanged } from 'rxjs/operators';
@@ -58,7 +58,7 @@ export class HeaderComponent implements OnInit, AfterViewChecked {
   updateAlert: Observable<any>;
   imgURL;
   constructor(private route: Router, private cdr: ChangeDetectorRef, private location: Location,  private store: Store<AppState>, private activatedRoute: ActivatedRoute, private data: DataService) {
-    this.UserDetails = this.store.select(getUserInfo);
+    
     this.UserAuthToken = this.store.select(getAuthenticatedToken);
     
    

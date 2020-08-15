@@ -7,7 +7,6 @@ import { Store } from '@ngrx/store';
 import { AppState, getAuthenticationError, getAuthenticatedToken } from 'src/app/core/store/reducers/app.reducer';
 import { PasswordValidator } from '../validators/password.validator';
 import { Router, ActivatedRoute } from '@angular/router';
-import { GetUserClients } from '../store/actions/user.actions';
 import { Location } from '@angular/common';
 import { DataService } from '../_service/data.service';
 
