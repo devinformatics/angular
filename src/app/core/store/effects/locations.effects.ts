@@ -1,9 +1,4 @@
-/**
-    Edufront Application Effect Classes
-    Created: 2019_05_22
-    Created by: Manish Pathak
-    Description: Classes for User Locations
-**/
+
 
 import { Injectable } from '@angular/core';
 import { Effect, Actions, ofType } from '@ngrx/effects';

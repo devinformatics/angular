@@ -1,9 +1,3 @@
-/**
-    Edufront Application Effect Classes
-    Created: 2019_05_22
-    Created by: Manish Pathak
-    Description: Classes for User Locations
-**/
 
 import { AllLOCATIONDATA, LocationsActionTypes } from '../actions/locations.actions';
 import { Settings } from '../../_models/settings';

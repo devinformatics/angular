@@ -1,8 +1,3 @@
-/** Edufront Application Data Classes
-    Created: 2018_11_30
-    Updated by: Manish
-    Description: Classes for Authentication Reducer
-**/
 
 import { USER } from '../../_models/user';
 

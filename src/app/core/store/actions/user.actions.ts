@@ -1,8 +1,4 @@
-/** Edufront Application Data Classes
-    Created: 2018_11_30
-    Updated by: Manish
-    Description: Classes for User Actions
-**/
+
 
 import { Action } from '@ngrx/store';
 

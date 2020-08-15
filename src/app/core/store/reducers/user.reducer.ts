@@ -1,8 +1,4 @@
-/** Edufront Application Data Classes
-    Created: 2018_11_30
-    Updated by: Manish
-    Description: Classes for User Reducer
-**/
+
 
 import { WnctyClient } from '../../_models/client';
 import { AllUSERCRUD, UserActionTypes } from '../actions/user.actions';

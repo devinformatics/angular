@@ -1,8 +1,4 @@
-/** Edufront Application Data Classes
-    Created: 2018_12_21
-    Updated by: Ravindra
-    Description: Classes for ResetPassword Effects
-**/
+
 import { Injectable } from '@angular/core';
 import { Effect, Actions, ofType } from '@ngrx/effects';
 import 'rxjs/add/operator/map';

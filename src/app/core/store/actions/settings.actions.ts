@@ -1,8 +1,4 @@
-/** Edufront Application Data Classes
-    Created: 2018_12_10
-    Updated by: Ravindra
-    Description: Classes for User Settings
-**/
+
 import { Action } from '@ngrx/store';
 
 // import type function

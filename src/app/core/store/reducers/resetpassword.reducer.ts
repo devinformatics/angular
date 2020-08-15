@@ -1,8 +1,3 @@
-/** Edufront Application Data Classes
-    Created: 2018_12_26
-    Updated by: Ravindra
-    Description: Classes for Reset Password Reducer
-**/
 
 import { AllRESETPASSWORDDATA, ResetPasswordActionTypes } from '../actions/resetpassword.actions';
 import { RESET_PASSWORD } from '../../_models/resetpassword';

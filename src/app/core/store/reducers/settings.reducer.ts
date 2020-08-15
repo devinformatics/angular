@@ -1,8 +1,4 @@
-/** Edufront Application Data Classes
-    Created: 2018_11_30
-    Updated by: Ravindra
-    Description: Classes for User Setting Reducer
-**/
+
 
 import { AllSETTINGDATA, SettingsActionTypes } from '../actions/settings.actions';
 import { Settings } from '../../_models/settings';
